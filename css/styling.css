@@ -1,0 +1,492 @@
+/*BODY*/
+body{
+  font-family: 'Montserrat';
+  background-color:#F5F5F5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.topside{
+  padding:250px;
+
+}
+
+div {
+  position:relative;
+ }
+ 
+ .a {
+   position:absolute;
+   z-index:1;
+   top:0; left:0;
+   width:100%;
+   opacity: 0.8;
+   
+ }
+ 
+ .b {
+   position:absolute;
+   z-index:2;
+   top:20%; left:40%;
+   height: 20%;
+   width:20%;
+   max-width: 100%;
+  
+   height:auto;
+ }
+
+
+.first{
+  width:300px;
+  height:300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color:black;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-family: 'Montserrat';
+}
+
+.navbar a.rightt {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+
+#text2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: 'Montserrat';
+  
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+.about{
+  height:auto;
+  width:650px;
+  top:50%;
+  left:50%;
+  max-width: 100%;
+}
+
+
+
+
+
+.slideshow-container {
+  position: relative;
+  background: ;
+}
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.slidepic{
+  width:70%;
+  max-width: 100%;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.text {
+  color:#303030;
+  font-size: 30px;
+  padding: 30px 10px;
+  position:inherit;
+  font-family: 'Montserrat';
+  bottom: 2px;
+  width: 100%;
+  text-align: center;
+
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+.dot {
+  cursor: pointer;
+  height: 9px;
+  width: 9px;
+  margin: 0px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  max-width: 100%;
+}
+
+.dot-container {
+    text-align: center;
+    padding: 1px;
+    background: #ddd;
+    max-width: 100%;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.searchbutton{ 
+  border: 2px solid #ff9800;
+  background-color: white;
+  color: #ff9800;
+  padding: 14px 100px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  border-radius:5px;
+  margin-left: 30px;
+  margin-top: 3%;
+  max-width: 100%;
+}
+
+input[type=text] {
+  padding: 13px;
+  
+  margin-top: 35px;
+  margin-left: 200px;
+  font-size: 17px;
+  width:50%;
+  border: 2px solid black;
+  border-radius: 5px;s
+  max-width: 100%;
+  font-family: 'Montserrat';
+}
+
+
+.searchbutton:hover{
+  background-color: black;
+}
+
+option {
+  padding: 40px 40px;
+}
+
+.columnow {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.rowow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnow {
+    width: 100%;
+  }
+}
+
+.checked {
+  color: orange;
+}
+
+
+
+
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column1 {
+  float: left;
+  padding: 3px;
+  height: 1370px;
+}
+
+.left {
+  
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+.talign{
+  text-align: center;
+  font-family: 'Montserrat';
+
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.card {
+  box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.2);
+  padding: 35px 20px;
+  text-align: center;
+  background-color: white;
+  
+}
+
+.r1,.r2{
+  
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.row11:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column11 {
+  float: left;
+  width: 33.33%;
+  padding: 10px 5px;
+  height: 300px;
+  text-align: center;
+}
+
+.row12:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column12 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+  text-align: center;
+}
+
+.row13:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column13 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 200px;
+  text-align: center;
+}
+
+.foot {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Montserrat';
+  background:black;
+}
+
+.footer{
+  width:55px;
+  height:55px;
+  display:block;
+  margin-left: 5px;
+  margin-right: auto;
+  max-width: 100%;
+  float: left;
+}
+
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row2 {margin: 0 -5px;}
+
+.column2 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 70px;
+  background-color: black;
+}
+ h2,h3{
+   color: white;
+ }
+
+
+
+
+.zoom {
+
+
+  transition: transform .2s;
+  max-width: 100%;
+  height: auto;
+
+  
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 950px) {
+  input[type=text]{
+    margin-left: 0%;
+    width:100%;
+  }
+  
+  
+}
+
+
+@media screen and (max-width: 950px) {
+  .searchbutton{
+    
+    margin-left:auto;margin-right:auto;display:block;
+  }
+  
+  
+}
+
+@media screen and (max-width: 1200px) {
+  .a{
+    
+    display:none;
+  }
+  
+  
+}
+
+@media screen and (max-width: 1200px) {
+  
+  .topside{
+    padding:20%;
+  }
+  
+  
+}
+
+@media screen and (max-width: 1200px) {
+  
+  .column1{
+    width:100%;
+  }
+  .column2{
+    width:100%;
+  }
+  
+}
+
+

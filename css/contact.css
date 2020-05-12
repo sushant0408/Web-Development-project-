@@ -1,0 +1,179 @@
+body {
+    background: #efefef;
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #B6B6B6;
+    font-family: 'Playfair Display', serif;
+  }
+  body section {
+    background: white;
+    margin: 60px auto 120px;
+    border-top: 15px solid #313A3D;
+    text-align: center;
+    padding: 50px 0 110px;
+    width: 80%;
+    max-width: 1100px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 12px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    float: right;
+    margin-right: 20px;
+    margin-top: 40px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .warning {
+    border-color: #ff9800;
+    color: orange;
+  }
+  .warning a{
+      color:orange;
+      text-decoration: none;
+      font-family: 'Playfair Display', serif;
+  }
+  .warning:hover {
+    background:black;
+    color: white;
+  }
+  .first{
+    width:100px;
+    height:100px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  
+  body section h1 {
+    margin-bottom: 40px;
+    font-size: 4em;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+  }
+  
+  form {
+    width: 58.3333333333%;
+    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+  }
+  form .field {
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  form .field label {
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #313A3D;
+    width: 100%;
+    padding: 18px 0;
+    font-size: 1.45em;
+    letter-spacing: 0.075em;
+    -webkit-transition: all 333ms ease-in-out;
+    -moz-transition: all 333ms ease-in-out;
+    -o-transition: all 333ms ease-in-out;
+    -ms-transition: all 333ms ease-in-out;
+    transition: all 333ms ease-in-out;
+  }
+  form .field label + span {
+    font-family: 'SSStandard';
+    opacity: 0;
+    color: white;
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 7%;
+    font-size: 2.5em;
+    text-shadow: 1px 2px 0 #cd6302;
+    -webkit-transition: all 333ms ease-in-out;
+    -moz-transition: all 333ms ease-in-out;
+    -o-transition: all 333ms ease-in-out;
+    -ms-transition: all 333ms ease-in-out;
+    transition: all 333ms ease-in-out;
+  }
+  form .field input[type="text"],
+  form .field textarea {
+    border: none;
+    background: #E8E9EA;
+    width: 100%;
+    margin: 0;
+    padding: 18px 0;
+    padding-left: 19.5%;
+    color: #313A3D;
+    font-size: 1.4em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+  }
+  form .field input[type="text"]#msg,
+  form .field textarea#msg {
+    height: 53px;
+    resize: none;
+    -webkit-transition: all 333ms ease-in-out;
+    -moz-transition: all 333ms ease-in-out;
+    -o-transition: all 333ms ease-in-out;
+    -ms-transition: all 333ms ease-in-out;
+    transition: all 333ms ease-in-out;
+  }
+  form .field input[type="text"]:focus, form .field input[type="text"].focused,
+  form .field textarea:focus,
+  form .field textarea.focused {
+    outline: none;
+  }
+  form .field input[type="text"]:focus#msg, form .field input[type="text"].focused#msg,
+  form .field textarea:focus#msg,
+  form .field textarea.focused#msg {
+    padding-bottom: 150px;
+  }
+  form .field input[type="text"]:focus + label, form .field input[type="text"].focused + label,
+  form .field textarea:focus + label,
+  form .field textarea.focused + label {
+    width: 18%;
+    background: #FD9638;
+    color: #313A3D;
+  }
+  form .field input[type="text"].focused + label,
+  form .field textarea.focused + label {
+    color: #FD9638;
+  }
+  form .field:hover label {
+    width: 18%;
+    background: #313A3D;
+    color: white;
+  }
+  form input[type="submit"] {
+    background: #FD9638;
+    color: white;
+    -webkit-appearance: none;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    padding: 13px 50px;
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    -webkit-transition: all 333ms ease-in-out;
+    -moz-transition: all 333ms ease-in-out;
+    -o-transition: all 333ms ease-in-out;
+    -ms-transition: all 333ms ease-in-out;
+    transition: all 333ms ease-in-out;
+    font-family: 'Playfair Display', serif;
+  }
+  form input[type="submit"]:hover {
+    background: #313A3D;
+    color: #FD9638;
+  }
+  form input[type="submit"]:focus {
+    outline: none;
+    background: #cd6302;
+  }
